@@ -2,7 +2,17 @@
     padding: 0px;
     margin: 0px;
 }
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+html {
+    box-sizing: border-box;
+}
 
+*, *:before, *:after {
+    box-sizing: inherit;
+}
 .container{
     width: 	920px;
     margin: auto;
@@ -96,6 +106,56 @@
     
 }
 
+/* Style Section About US */
+
+.column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+}
+
+.about-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #474e5d;
+    color: white;
+    width: 98%;
+    margin-left: 5px;
+    margin-top: 40px;
+}
+
+.containers {
+    padding: 0 16px;
+}
+
+.containers::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.title {
+    color: grey;
+}
+.button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+.button:hover {
+    background-color: #555;
+}
 
 
 
