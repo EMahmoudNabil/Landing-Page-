@@ -50,7 +50,6 @@
     width: 49%;
     margin-top: 20px;
 }
-
 .ServiceTXT{
     width: 49%;
     
@@ -66,9 +65,36 @@
     color: #9999;
     
 }
+.ServiceTXT a{
+    color: #000;
+    text-decoration: none;
+}
 
+.ServiceTXT a:hover{
+    color: rgb(51, 55, 95);
+    text-decoration: underline;
+}
 
+/* style Work section */
+.work{
 
+}
+.WorkIMG{
+    width: 23%;
+    margin-top: 20px;
+    margin-right: 10px;
+    
+}
+
+.WorkIMG:first-child{
+    margin-left: 10px;
+}
+.WorkIMG:hover{
+    border: 1px solid #444;
+    box-shadow: 5px 10px;
+    cursor: pointer;
+    
+}
 
 
 
