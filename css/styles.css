@@ -17,55 +17,69 @@ html {
     width: 	920px;
     margin: auto;
 }
-/* Navgation Style */
-.nav{
-    background-image: url('../images/labtopBG.jpg');
-    min-height: 700px;
+.page__header {
+    background: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 5;
 }
+/* Navgation Style */
+/* .nav{
+    background-image: url('../images/labtopBG.jpg');
+    min-height: 100px;
+    padding-bottom: 100px;
+} */
+.nav ul{
+    padding-left: 0;
+    margin: 0;
+    text-align: right;
+}
+.nav li{
+    display: inline-block;
+}
+.nav .menu_link {
+    display: block;
+    padding: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+}
+.nav .menu_link:hover {
+    background: #333;
+    color: #fff;
+    transition: ease 0.3s all;
+}
+
+
 .Logo{
     width: 50%;
     text-align: center;
     font-size: 40px;
-    margin-top: 20px;
+    margin-top: 10px;
+    margin-bottom: 3px;
     font-weight: bold;
 }
 .Logo a{
     color: #000;
     text-decoration: none;
 }
-.menuList{
-    width: 50%;
-    text-align: center;
-    font-size: 20px;
-    margin-top: 30px;
+
+section .active_class {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 100%);
 }
-.menuList ul li {
-    list-style: none;
-}
-.listItem{
-    margin-right: 20px;
-    font-size: 20px;
-    border: none;
-    outline: none;
-    /* padding: 3px 7px; */
-    background-color: #f1f1f1;
-    cursor: pointer;
-    float: left;
-}
-.listItem a{
-    text-decoration: none;
-    color: #000;
-}
-  /* Style the active class (and buttons on mouse-over) */
-.active, .listItem:hover {
-    background-color: #666;
+
+
+.navbar_menu .menu_link .active {
+    background: 'pink';
     color: white;
-} 
+
+}  
 
 
-
-.active ,.menuList ul li a:hover{
-    background-color: #666;
+.active {
+    background: linear-gradient(to right, #36d1dc, #5b86e5);
     color: white;
 }
 
@@ -73,7 +87,7 @@ html {
 /* style section Service */
 .headService{
     text-align: center;
-    margin-top: 10px;
+    margin-top: 100px;
     font-size: 50px;
 }
 .ServiceIMG{
@@ -106,9 +120,6 @@ html {
 }
 
 /* style Work section */
-.work{
-
-}
 .WorkIMG{
     width: 23%;
     margin-top: 20px;
@@ -215,6 +226,8 @@ input[type=submit]:hover {
     padding: 20px;
 }
 
+
+
   /* Clear floats after the columns */
 .Footerrow:after {
     content: "";
@@ -225,22 +238,6 @@ input[type=submit]:hover {
     text-align: center;
     color: #444444;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
