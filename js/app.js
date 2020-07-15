@@ -44,10 +44,8 @@ let scrollToSection = function (e) {
   section.scrollIntoView({ behavior: 'smooth' });
 }
 
-window.addEventListener("scroll", function(e) {
-      inViewPort();
-  });
-
+// Event Listener
+window.addEventListener("scroll", function(e) {inViewPort();});
   navBarList.addEventListener('click', scrollToSection);
   window.addEventListener("scroll", changeState);
 
