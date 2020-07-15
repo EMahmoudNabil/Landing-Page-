@@ -17,7 +17,7 @@ html {
     width: 	920px;
     margin: auto;
 }
-.page_header {
+.page__header {
     background: #fff;
     position: fixed;
     top: 0;
@@ -30,6 +30,27 @@ html {
     min-height: 100px;
     padding-bottom: 100px;
 } */
+.nav ul{
+    padding-left: 0;
+    margin: 0;
+    text-align: right;
+}
+.nav li{
+    display: inline-block;
+}
+.nav .menu_link {
+    display: block;
+    padding: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+}
+.nav .menu_link:hover {
+    background: #333;
+    color: #fff;
+    transition: ease 0.3s all;
+}
+
 
 .Logo{
     width: 50%;
@@ -44,28 +65,24 @@ html {
     text-decoration: none;
 }
 
- /* Style the buttons */
-.containerList{
-    width: 45%;
-    float: right;
+section .active_class {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 100%);
 }
- .listItem {
-    padding: 10px 16px;
-    cursor: pointer;
-    display: inline-block;
-    margin-right: 5px;
-  }
-  .listItem a{
-    text-decoration: none;
-    color: #000;
-    
-  }
-  
-  /* Style the active class (and buttons on mouse-over) */
-  .active, .listItem:hover {
-    background-color: #666;
+
+
+.navbar_menu .menu_link .active {
+    background: 'pink';
     color: white;
-  } 
+
+}  
+
+
+.active {
+    background: linear-gradient(to right, #7ecfcf, #6a61bd);
+    color: white;
+}
+
 
 /* style section Service */
 .headService{
