@@ -16,7 +16,6 @@ function createNavbar() {
   }
   navBarList.appendChild(imaginaryMethode );
 }
-
 createNavbar();
 
 // Add class 'active
@@ -29,18 +28,14 @@ function isInViewport() {
   }
 }
 
-
 // modification of state link
 const links = document.querySelectorAll(".links");
 function changeState() {
   let index = sections.length;
-
   while (--index && window.scrollY + 50 < sections[index].offsetTop) {}
   links.forEach(link => link.classList.remove("active"));
   links[index].classList.add("active");
 }
-
-changeState();
 
 //  Scroll to anchor ID using and smooth motion
 let scrollToSection = function (e) {
